@@ -1,14 +1,13 @@
-group = "app.template"
+group = "app.braintropy"
 
 patches {
-    // TODO: Update this section with your project details.
     about {
-        name = "UserXYZ Patches"
-        description = "Patches for apps I like"
-        source = "git@github.com:UserXYZ/morphe-patches.git"
-        author = "Awesome dev"
-        contact = "na"
-        website = "na"
+        name = "braiNtropy Patches"
+        description = "Custom patches for use with Morphe"
+        source = "https://github.com/braiNtropy/braintropy-patches"
+        author = "braiNtropy"
+        contact = "https://github.com/braiNtropy"
+        website = "https://github.com/braiNtropy/braintropy-patches"
         license = "GPLv3"
     }
 }
