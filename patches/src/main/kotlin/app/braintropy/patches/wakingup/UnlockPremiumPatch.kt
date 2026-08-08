@@ -49,5 +49,8 @@ val unlockPremiumPatch = bytecodePatch(
 
         // Never render the "Subscribe to unlock" / "See Membership Options" upsell row.
         SubscribeRowFingerprint.method.addInstructions(0, "return-void")
+
+        // Never render the home/explore "Join Waking Up" / "Get started" CTA banner.
+        HomeCtaBannerFingerprint.method.addInstructions(0, "return-void")
     }
 }

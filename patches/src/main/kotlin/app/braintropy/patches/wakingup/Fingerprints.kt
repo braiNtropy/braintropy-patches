@@ -13,6 +13,7 @@ import app.morphe.patcher.Fingerprint
  * - Lo20/b;  -> CourseModel (domain course model, field c = isAvailable,
  *   computed from the server-side "is_unlocked" flag)
  * - Lya0/h;  -> SubscribeRow ("Subscribe to unlock" upsell composable)
+ * - Lu40/b;  -> WidgetCTAScreen (home/explore "Become Subscriber" upsell banner)
  */
 
 /**
@@ -73,5 +74,24 @@ object SubscribeRowFingerprint : Fingerprint(
         "Landroidx/compose/runtime/Composer;",
         "Landroidx/compose/ui/Modifier;",
         "Lkotlin/jvm/functions/Function0;"
+    )
+)
+
+/**
+ * The home/explore CTA widget entry composable (WidgetCTAScreen), which renders
+ * the "Join Waking Up" / "Get started" BecomeSubscriber banner.
+ * The banner's visibility is driven by the remote home_cta configuration and is
+ * not tied to the local subscription state, so it must be suppressed explicitly.
+ * Only one method named "b" exists in this class.
+ */
+object HomeCtaBannerFingerprint : Fingerprint(
+    definingClass = "Lu40/b;",
+    name = "b",
+    returnType = "V",
+    parameters = listOf(
+        "Lt40/k;",
+        "La50/o;",
+        "Landroidx/compose/runtime/Composer;",
+        "I"
     )
 )
