@@ -1,12 +1,10 @@
-# 👋🧩 Morphe Patches template
+# 👋🧩 braiNtropy Patches
 
-Template repository for Morphe Patches.
+Custom patches for apps I use, for use with Morphe.
 
 ## ❓ About
 
-Patches for apps I like.
-
-TODO: Update this about section with a brief introduction/summary about this repo and what it offers.
+This repository contains patches maintained by [braiNtropy](https://github.com/braiNtropy).
 
 ## 🩹 Patches list
 
@@ -25,18 +23,12 @@ TODO: Update this about section with a brief introduction/summary about this rep
 
 ## 🚀 Get started
 
-To start using this template, follow these steps:
+The local development environment is based on the official Morphe template. To publish it:
 
-1. [Setup](https://github.com/MorpheApp/morphe-documentation/blob/main/docs/morphe-development/README.md) your development environment including adding a GitHub PAT as described [here](https://github.com/MorpheApp/morphe-patcher/blob/main/docs/2_1_setup.md#-prepare-the-environment).
-2. [Create a new repository using this template](https://github.com/new?template_name=morphe-patches-template&template_owner=MorpheApp). Select create a new repository, and **enable 'Include all branches'** 
-3. Enable "Allow GitHub Actions to create and approve pull requests" in your repo Settings > Actions > General > Workflow permissions
-4. Update the [build.gradle.kts](patches/build.gradle.kts) file (Specifically, the 
-   [group of the project](patches/build.gradle.kts#L1), and the [About](patches/build.gradle.kts#L6-L11))
-5. Update the [README.md](README.md) file to be specific of your repo, and update the links in the [issue templates](.github/ISSUE_TEMPLATE).
-6. Choose a name for your patches project. Keep in mind you must use a name that does not 
-   imply authorship by the Morphe open source project. If unsure, then simply name these
-   patches after yourself ("UserXYZ Morphe patches"). See the [NOTICE](NOTICE) for details. 
-7. (Optional): Add `patches-bundle.png` to the project if you want a custom icon to show in
+1. Create `braiNtropy/braintropy-patches` on GitHub and add it as the `origin` remote.
+2. Enable "Allow GitHub Actions to create and approve pull requests" in Settings > Actions > General > Workflow permissions.
+3. Add a GitHub credential with `read:packages` access as described in the [Morphe setup guide](https://github.com/MorpheApp/morphe-patcher/blob/main/docs/2_1_setup.md#-prepare-the-environment).
+4. (Optional): Add `patches-bundle.png` to the project if you want a custom icon to show in
    Morphe Manager instead of your GitHub profile avatar.
 
 🎉 You are now ready to start creating patches!
@@ -72,15 +64,21 @@ To develop and release your Patches using this template:
 
 #### How to use these patches
 
-Click here to add these patches to Morphe: https://morphe.software/add-source?github=xyz-user/xyz-patches
+Click here to add these patches to Morphe: https://morphe.software/add-source?github=braiNtropy/braintropy-patches
 
-Or manually add this repository url as a patch source in Morphe: https://github.com/xyz-user/xyz-patches
+Or manually add this repository URL as a patch source in Morphe: https://github.com/braiNtropy/braintropy-patches
 
 ### 🛠️ Building
 
-To build UserXYZ Patches,
-you can follow the [Morphe documentation](https://github.com/MorpheApp/morphe-documentation).
+After granting the GitHub CLI token `read:packages` access, build on Windows with:
+
+```powershell
+.\build-patches.ps1
+```
+
+The patch bundle is generated under `patches/build/libs/`. See the
+[Morphe documentation](https://github.com/MorpheApp/morphe-documentation) for the complete workflow.
 
 ## 📜 License
 
-UserXYZ Patches are licensed under the [GNU General Public License v3.0](LICENSE)
+braiNtropy Patches are licensed under the [GNU General Public License v3.0](LICENSE).
