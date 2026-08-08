@@ -7,7 +7,7 @@ import app.braintropy.patches.shared.Constants.COMPATIBILITY_WAKING_UP
 @Suppress("unused")
 val unlockPremiumPatch = bytecodePatch(
     name = "Unlock Premium",
-    description = "Unlocks all premium content and removes subscription upsell banners.",
+    description = "Unlocks all premium content and removes subscription banners.",
     default = true
 ) {
     compatibleWith(COMPATIBILITY_WAKING_UP)
