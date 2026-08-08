@@ -9,7 +9,7 @@ This repository contains patches maintained by [braiNtropy](https://github.com/b
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.0.0](https://github.com/braiNtropy/braintropy-patches/releases/tag/v1.0.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;1 patches total
+> **[v1.0.1](https://github.com/braiNtropy/braintropy-patches/releases/tag/v1.0.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;1 patches total
 <details open>
 <summary>📦 Waking Up&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
 <br>
@@ -21,7 +21,7 @@ This repository contains patches maintained by [braiNtropy](https://github.com/b
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [Unlock Premium](#unlock-premium) | Unlocks all premium content and removes subscription upsell banners. |  |
+| [Unlock Premium](#unlock-premium) | Unlocks all premium content and removes subscription banners. |  |
 
 </details>
 

@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/braiNtropy/braintropy-patches/compare/v1.0.0...v1.0.1) (2026-08-08)
+
+### 🐛 Bug Fixes
+
+* Rephrase Unlock Premium patch description ([ebc42da](https://github.com/braiNtropy/braintropy-patches/commit/ebc42da248a9af34bd1def88f85f73a1c46691e0))
+
 ## 1.0.0 (2026-08-08)
 
 ### ✨ New Features
