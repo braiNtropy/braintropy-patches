@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/braiNtropy/braintropy-patches/compare/v1.0.1...v1.1.0) (2026-08-14)
+
+### ✨ New Features
+
+* Add Unlock Premium patch for MyoAdapt v1.5.1 ([a259876](https://github.com/braiNtropy/braintropy-patches/commit/a2598766ad5504e0dd91838943223843da831f6d))
+
 ## [1.1.0-dev.1](https://github.com/braiNtropy/braintropy-patches/compare/v1.0.1...v1.1.0-dev.1) (2026-08-14)
 
 ### ✨ New Features
