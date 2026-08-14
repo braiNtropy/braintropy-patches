@@ -9,7 +9,22 @@ This repository contains patches maintained by [braiNtropy](https://github.com/b
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.0.1](https://github.com/braiNtropy/braintropy-patches/releases/tag/v1.0.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;1 patches total
+> **[v1.1.0-dev.1](https://github.com/braiNtropy/braintropy-patches/releases/tag/v1.1.0-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
+<details open>
+<summary>📦 MyoAdapt&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
+<br>
+
+**🎯 Supported versions:**
+
+| 1.5.1 |
+| :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Unlock Premium](#unlock-premium) | Unlocks all premium content and fixes logouts. |  |
+
+</details>
+
 <details open>
 <summary>📦 Waking Up&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
 <br>
@@ -43,6 +58,10 @@ After granting the GitHub CLI token `read:packages` access, build on Windows wit
 
 The patch bundle is generated under `patches/build/libs/`. See the
 [Morphe documentation](https://github.com/MorpheApp/morphe-documentation) for the complete workflow.
+
+## 🙏 Credits
+
+- The MyoAdapt *Unlock Premium* patch is based on work by [Xhehab](https://github.com/Xhehab/Xhehab-Patches) (GPL-3.0), modified to remove its app-storage wipe that randomly logged users out.
 
 ## 📜 License
 
