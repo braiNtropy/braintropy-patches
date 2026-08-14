@@ -1,3 +1,14 @@
+## [2.0.0](https://github.com/braiNtropy/braintropy-patches/compare/v1.1.0...v2.0.0) (2026-08-14)
+
+### ⚠ BREAKING CHANGES
+
+* The MyoAdapt patch is removed and no longer ships in
+the patches bundle.
+
+### ✨ New Features
+
+* Remove MyoAdapt "Unlock Premium" patch ([3886626](https://github.com/braiNtropy/braintropy-patches/commit/388662616750583e26394b3fbeec07858988057b))
+
 ## [1.1.0](https://github.com/braiNtropy/braintropy-patches/compare/v1.0.1...v1.1.0) (2026-08-14)
 
 ### ✨ New Features
