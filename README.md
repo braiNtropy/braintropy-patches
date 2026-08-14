@@ -44,10 +44,6 @@ After granting the GitHub CLI token `read:packages` access, build on Windows wit
 The patch bundle is generated under `patches/build/libs/`. See the
 [Morphe documentation](https://github.com/MorpheApp/morphe-documentation) for the complete workflow.
 
-## 🙏 Credits
-
-- The MyoAdapt *Unlock Premium* patch is based on work by [Xhehab](https://github.com/Xhehab/Xhehab-Patches) (GPL-3.0), modified to remove its app-storage wipe that randomly logged users out.
-
 ## 📜 License
 
 braiNtropy Patches are licensed under the [GNU General Public License v3.0](LICENSE).
