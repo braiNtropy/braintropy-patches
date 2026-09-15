@@ -28,16 +28,4 @@ object Constants {
             )
         )
     )
-
-    val COMPATIBILITY_MYOADAPT = Compatibility(
-        name = "MyoAdapt",
-        packageName = "com.myoadapt.app.android",
-        apkFileType = ApkFileType.XAPK,
-        appIconColor = 0x111111,
-        targets = listOf(
-            AppTarget(
-                version = "1.5.1"
-            )
-        )
-    )
 }

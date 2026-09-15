@@ -17,6 +17,7 @@ val disableOtaUpdatesPatch = resourcePatch(
         "published by the developer.",
     default = true
 ) {
+    category("Updates")
     compatibleWith(COMPATIBILITY_TRACEARR)
 
     execute {

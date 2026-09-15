@@ -11,6 +11,7 @@ val unlockPremiumPatch = bytecodePatch(
         "installs not purchased through the Play Store to the buy page.",
     default = true
 ) {
+    category("Unlock")
     compatibleWith(COMPATIBILITY_TRACEARR)
 
     execute {
