@@ -17,6 +17,18 @@ object Constants {
         )
     )
 
+    val COMPATIBILITY_TRACEARR = Compatibility(
+        name = "Tracearr",
+        packageName = "com.tracearr.mobile",
+        apkFileType = ApkFileType.APK,
+        appIconColor = 0x09090B,
+        targets = listOf(
+            AppTarget(
+                version = "2.2.0"
+            )
+        )
+    )
+
     val COMPATIBILITY_MYOADAPT = Compatibility(
         name = "MyoAdapt",
         packageName = "com.myoadapt.app.android",
