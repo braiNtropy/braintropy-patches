@@ -1,8 +1,7 @@
-package app.braintropy.patches.tracearr
+package app.braintropy.patches.all.expo
 
-import app.morphe.patcher.patch.PatchException
 import app.morphe.patcher.patch.resourcePatch
-import app.braintropy.patches.shared.Constants.COMPATIBILITY_TRACEARR
+import java.util.logging.Logger
 
 private const val ANDROID_NS = "http://schemas.android.com/apk/res/android"
 
@@ -11,14 +10,13 @@ private fun org.w3c.dom.Node.attr(name: String) =
 
 @Suppress("unused")
 val disableOtaUpdatesPatch = resourcePatch(
-    name = "Disable OTA updates",
+    name = "Disable Expo OTA updates",
     description = "Disables expo-updates: the app no longer contacts the Expo update server " +
         "(u.expo.dev) on launch and can never download or run over-the-air JavaScript updates " +
-        "published by the developer.",
-    default = true
+        "published by the developer. Only applies to apps built with Expo.",
+    default = false
 ) {
     category("Updates")
-    compatibleWith(COMPATIBILITY_TRACEARR)
 
     execute {
         document("AndroidManifest.xml").use { document ->
@@ -34,7 +32,8 @@ val disableOtaUpdatesPatch = resourcePatch(
                     }
                 }
             }
-            if (patched == 0) throw PatchException("expo.modules.updates meta-data not found in AndroidManifest.xml")
+            if (patched == 0) Logger.getLogger(this::class.java.name)
+                .warning("expo.modules.updates meta-data not found in AndroidManifest.xml. No changes applied.")
         }
     }
 }
