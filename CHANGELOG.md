@@ -1,3 +1,9 @@
+## [2.4.0-dev.3](https://github.com/braiNtropy/braintropy-patches/compare/v2.4.0-dev.2...v2.4.0-dev.3) (2026-10-12)
+
+### 🐛 Bug Fixes
+
+* **RP Hypertrophy:** Null-safe endpoint comparison in request interceptor ([55da49c](https://github.com/braiNtropy/braintropy-patches/commit/55da49ce5fbe6f5f8f83a46760d06ef330a7e89b))
+
 ## [2.4.0-dev.2](https://github.com/braiNtropy/braintropy-patches/compare/v2.4.0-dev.1...v2.4.0-dev.2) (2026-10-12)
 
 ### 🐛 Bug Fixes

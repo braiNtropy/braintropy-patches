@@ -9,7 +9,7 @@ This repository contains patches maintained by [braiNtropy](https://github.com/b
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v2.4.0-dev.2](https://github.com/braiNtropy/braintropy-patches/releases/tag/v2.4.0-dev.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
+> **[v2.4.0-dev.3](https://github.com/braiNtropy/braintropy-patches/releases/tag/v2.4.0-dev.3)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
 <details open>
 <summary>📦 RP Hypertrophy&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
 <br>
