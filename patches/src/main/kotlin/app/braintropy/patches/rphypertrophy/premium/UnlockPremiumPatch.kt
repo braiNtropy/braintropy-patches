@@ -7,9 +7,8 @@
  *   license check entirely instead of faking a successful server response.
  * - Synthesizes the WebResourceResponse directly instead of forwarding the
  *   request to RP's server to copy its status/headers. Verified safe: the app
- *   loads https://training.rpstrength.com and calls the endpoint same-origin,
- *   so no CORS or header fidelity is required (the original even serves the
- *   JSON body with an "application/javascript" MIME type without issue).
+ *   calls the endpoint same-origin (https://training.rpstrength.com), so no
+ *   CORS or header fidelity is required.
  */
 
 package app.braintropy.patches.rphypertrophy.premium
@@ -33,8 +32,8 @@ private const val RESPONSE =
         "\\\"consumedIaps\\\":[{\\\"access\\\":[\\\"training\\\"]}],\\\"stripeIds\\\":[]}"
 
 @Suppress("unused")
-val enablePremiumPatch = bytecodePatch(
-    name = "Enable Premium",
+val unlockPremiumPatch = bytecodePatch(
+    name = "Unlock Premium",
     description = "Enables app features locked behind the subscription paywall.",
     default = true
 ) {
@@ -60,9 +59,10 @@ val enablePremiumPatch = bytecodePatch(
             null,
             MutableMethodImplementation(7) // 4 locals (v0-v3) + 3 parameters (p0-p2)
         )
-        webClientClass.methods.add(MutableMethod(method))
+        val interceptor = MutableMethod(method)
+        webClientClass.methods.add(interceptor)
 
-        webClientClass.methods.first { it.name == "shouldInterceptRequest" }.addInstructions(
+        interceptor.addInstructions(
             """
                 invoke-interface { p2 }, Landroid/webkit/WebResourceRequest;->getUrl()Landroid/net/Uri;
                 move-result-object v0
