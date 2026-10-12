@@ -1,3 +1,9 @@
+## [2.4.0-dev.2](https://github.com/braiNtropy/braintropy-patches/compare/v2.4.0-dev.1...v2.4.0-dev.2) (2026-10-12)
+
+### 🐛 Bug Fixes
+
+* **RP Hypertrophy:** Rename patch to `Unlock Premium` ([209bc8a](https://github.com/braiNtropy/braintropy-patches/commit/209bc8ade4d8dcda797e6796aa564a65fb375477))
+
 ## [2.4.0-dev.1](https://github.com/braiNtropy/braintropy-patches/compare/v2.3.0...v2.4.0-dev.1) (2026-10-12)
 
 ### ✨ New Features

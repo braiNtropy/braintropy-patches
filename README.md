@@ -9,7 +9,7 @@ This repository contains patches maintained by [braiNtropy](https://github.com/b
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v2.4.0-dev.1](https://github.com/braiNtropy/braintropy-patches/releases/tag/v2.4.0-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
+> **[v2.4.0-dev.2](https://github.com/braiNtropy/braintropy-patches/releases/tag/v2.4.0-dev.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
 <details open>
 <summary>📦 RP Hypertrophy&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
 <br>
@@ -21,7 +21,7 @@ This repository contains patches maintained by [braiNtropy](https://github.com/b
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [Enable Premium](#enable-premium) | Enables app features locked behind the subscription paywall. |  |
+| [Unlock Premium](#unlock-premium) | Enables app features locked behind the subscription paywall. |  |
 
 </details>
 
