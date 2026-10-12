@@ -1,3 +1,9 @@
+## [2.4.0-dev.1](https://github.com/braiNtropy/braintropy-patches/compare/v2.3.0...v2.4.0-dev.1) (2026-10-12)
+
+### ✨ New Features
+
+* **RP Hypertrophy:** Add `Enable Premium` patch ([d67e7a9](https://github.com/braiNtropy/braintropy-patches/commit/d67e7a9cb4479f5e041dcd71367864a99fedbbdb))
+
 ## [2.3.0](https://github.com/braiNtropy/braintropy-patches/compare/v2.2.0...v2.3.0) (2026-09-17)
 
 ### ✨ New Features
