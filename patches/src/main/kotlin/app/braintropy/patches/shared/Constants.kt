@@ -5,6 +5,18 @@ import app.morphe.patcher.patch.AppTarget
 import app.morphe.patcher.patch.Compatibility
 
 object Constants {
+    val COMPATIBILITY_RP_HYPERTROPHY = Compatibility(
+        name = "RP Hypertrophy",
+        packageName = "com.rp.hypertrophy",
+        apkFileType = ApkFileType.XAPK,
+        appIconColor = 0xEC0915,
+        targets = listOf(
+            AppTarget(
+                version = "1.6.0"
+            )
+        )
+    )
+
     val COMPATIBILITY_WAKING_UP = Compatibility(
         name = "Waking Up",
         packageName = "org.wakingup.android",

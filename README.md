@@ -9,7 +9,22 @@ This repository contains patches maintained by [braiNtropy](https://github.com/b
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v2.3.0](https://github.com/braiNtropy/braintropy-patches/releases/tag/v2.3.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;3 patches total
+> **[v2.4.0-dev.3](https://github.com/braiNtropy/braintropy-patches/releases/tag/v2.4.0-dev.3)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
+<details open>
+<summary>📦 RP Hypertrophy&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
+<br>
+
+**🎯 Supported versions:**
+
+| 1.6.0 |
+| :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Unlock Premium](#unlock-premium) | Enables app features locked behind the subscription paywall. |  |
+
+</details>
+
 <details open>
 <summary>📦 Waking Up&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
 <br>
@@ -58,3 +73,7 @@ The patch bundle is generated under `patches/build/libs/`. See the
 ## 📜 License
 
 braiNtropy Patches are licensed under the [GNU General Public License v3.0](LICENSE).
+
+The `Unlock Premium` patch for RP Hypertrophy is derived from
+[hoo-dles/morphe-patches](https://github.com/hoo-dles/morphe-patches) (GPL-3.0),
+with thanks to hoo-dles for the original endpoint analysis.

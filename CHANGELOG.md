@@ -1,3 +1,21 @@
+## [2.4.0-dev.3](https://github.com/braiNtropy/braintropy-patches/compare/v2.4.0-dev.2...v2.4.0-dev.3) (2026-10-12)
+
+### 🐛 Bug Fixes
+
+* **RP Hypertrophy:** Null-safe endpoint comparison in request interceptor ([55da49c](https://github.com/braiNtropy/braintropy-patches/commit/55da49ce5fbe6f5f8f83a46760d06ef330a7e89b))
+
+## [2.4.0-dev.2](https://github.com/braiNtropy/braintropy-patches/compare/v2.4.0-dev.1...v2.4.0-dev.2) (2026-10-12)
+
+### 🐛 Bug Fixes
+
+* **RP Hypertrophy:** Rename patch to `Unlock Premium` ([209bc8a](https://github.com/braiNtropy/braintropy-patches/commit/209bc8ade4d8dcda797e6796aa564a65fb375477))
+
+## [2.4.0-dev.1](https://github.com/braiNtropy/braintropy-patches/compare/v2.3.0...v2.4.0-dev.1) (2026-10-12)
+
+### ✨ New Features
+
+* **RP Hypertrophy:** Add `Enable Premium` patch ([d67e7a9](https://github.com/braiNtropy/braintropy-patches/commit/d67e7a9cb4479f5e041dcd71367864a99fedbbdb))
+
 ## [2.3.0](https://github.com/braiNtropy/braintropy-patches/compare/v2.2.0...v2.3.0) (2026-09-17)
 
 ### ✨ New Features
