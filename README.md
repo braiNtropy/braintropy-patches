@@ -58,3 +58,7 @@ The patch bundle is generated under `patches/build/libs/`. See the
 ## 📜 License
 
 braiNtropy Patches are licensed under the [GNU General Public License v3.0](LICENSE).
+
+The `Enable Premium` patch for RP Hypertrophy is derived from
+[hoo-dles/morphe-patches](https://github.com/hoo-dles/morphe-patches) (GPL-3.0),
+with thanks to hoo-dles for the original endpoint analysis.
