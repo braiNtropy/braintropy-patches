@@ -69,7 +69,7 @@ val unlockPremiumPatch = bytecodePatch(
                 invoke-virtual { v0 }, Landroid/net/Uri;->getPath()Ljava/lang/String;
                 move-result-object v0
                 const-string v1, "$ENDPOINT"
-                invoke-virtual { v0, v1 }, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+                invoke-virtual { v1, v0 }, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
                 move-result v0
                 if-eqz v0, :ignore
                 const-string v0, "$RESPONSE"
