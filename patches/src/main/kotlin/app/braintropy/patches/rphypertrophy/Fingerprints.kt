@@ -1,4 +1,4 @@
-package app.braintropy.patches.rphypertrophy.premium
+package app.braintropy.patches.rphypertrophy
 
 import app.morphe.patcher.Fingerprint
 
