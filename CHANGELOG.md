@@ -1,3 +1,9 @@
+## [2.5.0-dev.3](https://github.com/braiNtropy/braintropy-patches/compare/v2.5.0-dev.2...v2.5.0-dev.3) (2026-10-29)
+
+### ✨ New Features
+
+* **Waking Up:** Make "Unlock Premium" version-resilient, support v3.27.0 ([88de8e0](https://github.com/braiNtropy/braintropy-patches/commit/88de8e0bff23293529c7e9c05e2e50873d36645f))
+
 ## [2.5.0-dev.2](https://github.com/braiNtropy/braintropy-patches/compare/v2.5.0-dev.1...v2.5.0-dev.2) (2026-10-29)
 
 ### 🐛 Bug Fixes
