@@ -95,6 +95,22 @@ object RemoteSettingsModelToStringFingerprint : Fingerprint(
 )
 
 /**
+ * The OkHttp auth interceptor that decorates every API request with
+ * app-version / app-build headers. The server (AWS WAF) rejects requests
+ * from outdated builds with a 404, so these headers must be spoofed for
+ * an old build to keep working. Matched by its unique string literals,
+ * so it survives R8 re-obfuscation.
+ */
+object ApiHeadersInterceptorFingerprint : Fingerprint(
+    strings = listOf(
+        "Maintenance Mode Active - all requests should be blocked",
+        "Authorization",
+        "app-version",
+        "app-build"
+    )
+)
+
+/**
  * The home/explore CTA widget entry composable (WidgetCTAScreen), which renders
  * the "Join Waking Up" / "Get started" BecomeSubscriber banner.
  * The banner's visibility is driven by the remote home_cta configuration and is
