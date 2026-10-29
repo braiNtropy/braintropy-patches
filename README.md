@@ -9,7 +9,7 @@ This repository contains patches maintained by [braiNtropy](https://github.com/b
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v2.5.0-dev.1](https://github.com/braiNtropy/braintropy-patches/releases/tag/v2.5.0-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;5 patches total
+> **[v2.5.0-dev.2](https://github.com/braiNtropy/braintropy-patches/releases/tag/v2.5.0-dev.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;5 patches total
 <details open>
 <summary>📦 Waking Up&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
 <br>
@@ -21,7 +21,7 @@ This repository contains patches maintained by [braiNtropy](https://github.com/b
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [Disable update prompt](#disable-update-prompt) | Suppresses the "Update Required" dialog shown on launch when the server reports a newer preferred build. Zeroes the remote build-number settings (preferredBuildNumber, criticalBuildNumber, preferredOSVersion) so the version check always passes. Does not affect the version shown in the app. |  |
+| [Disable update prompt](#disable-update-prompt) | Suppresses the "Update Required" dialog shown on launch when the server reports a newer preferred build, and spoofs the app-version/app-build request headers so the server (which rejects outdated builds with a 404) keeps serving the app. Does not affect the version shown in the app. |  |
 | [Unlock Premium](#unlock-premium) | Unlocks all premium content and removes subscription banners. |  |
 
 </details>

@@ -1,3 +1,9 @@
+## [2.5.0-dev.2](https://github.com/braiNtropy/braintropy-patches/compare/v2.5.0-dev.1...v2.5.0-dev.2) (2026-10-29)
+
+### 🐛 Bug Fixes
+
+* **Waking Up:** Spoof app version headers in "Disable update prompt" ([22f2863](https://github.com/braiNtropy/braintropy-patches/commit/22f28632197d177b5da977d31dc023285f27c7be))
+
 ## [2.5.0-dev.1](https://github.com/braiNtropy/braintropy-patches/compare/v2.4.0...v2.5.0-dev.1) (2026-10-29)
 
 ### ✨ New Features

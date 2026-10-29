@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "2.5.0-dev.1",
+  "version": "2.5.0-dev.2",
   "patches": [
     {
       "name": "Disable Expo OTA updates",
@@ -22,7 +22,7 @@
     },
     {
       "name": "Disable update prompt",
-      "description": "Suppresses the \"Update Required\" dialog shown on launch when the server reports a newer preferred build. Zeroes the remote build-number settings (preferredBuildNumber, criticalBuildNumber, preferredOSVersion) so the version check always passes. Does not affect the version shown in the app.",
+      "description": "Suppresses the \"Update Required\" dialog shown on launch when the server reports a newer preferred build, and spoofs the app-version/app-build request headers so the server (which rejects outdated builds with a 404) keeps serving the app. Does not affect the version shown in the app.",
       "default": true,
       "category": "Updates",
       "dependencies": [],
