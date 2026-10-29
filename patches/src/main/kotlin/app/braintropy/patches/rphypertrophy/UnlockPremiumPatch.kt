@@ -11,7 +11,7 @@
  *   CORS or header fidelity is required.
  */
 
-package app.braintropy.patches.rphypertrophy.premium
+package app.braintropy.patches.rphypertrophy
 
 import app.braintropy.patches.all.pairip.disableLicenseCheckPatch
 import app.braintropy.patches.shared.Constants.COMPATIBILITY_RP_HYPERTROPHY
