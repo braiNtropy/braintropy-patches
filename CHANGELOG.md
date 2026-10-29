@@ -1,3 +1,9 @@
+## [2.5.0-dev.4](https://github.com/braiNtropy/braintropy-patches/compare/v2.5.0-dev.3...v2.5.0-dev.4) (2026-10-29)
+
+### 🐛 Bug Fixes
+
+* **Waking Up:** Drop version-pinned UI no-op fingerprints ([ddb3c0a](https://github.com/braiNtropy/braintropy-patches/commit/ddb3c0a1b37467a9f033d04169469dc6828efe98))
+
 ## [2.5.0-dev.3](https://github.com/braiNtropy/braintropy-patches/compare/v2.5.0-dev.2...v2.5.0-dev.3) (2026-10-29)
 
 ### ✨ New Features
