@@ -1,3 +1,9 @@
+## [2.5.0-dev.1](https://github.com/braiNtropy/braintropy-patches/compare/v2.4.0...v2.5.0-dev.1) (2026-10-29)
+
+### ✨ New Features
+
+* **Waking Up:** Add "Disable update prompt" patch ([0dac931](https://github.com/braiNtropy/braintropy-patches/commit/0dac931ae2ae36b54f314f0512fc372d2ebc9f12)), closes [#12](https://github.com/braiNtropy/braintropy-patches/issues/12)
+
 ## [2.4.0](https://github.com/braiNtropy/braintropy-patches/compare/v2.3.0...v2.4.0) (2026-10-12)
 
 ### 🐛 Bug Fixes
