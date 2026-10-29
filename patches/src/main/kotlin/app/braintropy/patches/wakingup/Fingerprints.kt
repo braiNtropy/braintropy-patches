@@ -3,62 +3,38 @@ package app.braintropy.patches.wakingup
 import app.morphe.patcher.Fingerprint
 
 /**
- * Fingerprints for org.wakingup.android v3.24.1.
+ * Fingerprints for org.wakingup.android.
  *
- * The app is R8 obfuscated, so class and member names below are the
- * obfuscated names found in this exact app version:
+ * The model fingerprints below are matched by the property labels baked into
+ * each model's toString() string literals instead of R8-obfuscated class and
+ * member names, so they survive re-obfuscation across app versions. Every
+ * layer carrying the flags is matched (domain model, data/entity model, view
+ * items) and each matched class gets its flags overridden in its constructor.
  *
- * - Le40/u;  -> UserModel (domain user model, field k = isSubscribed,
- *   field n = isTrialSubscription)
- * - Lo20/b;  -> CourseModel (domain course model, field c = isAvailable,
- *   computed from the server-side "is_unlocked" flag)
- * - Lya0/h;  -> SubscribeRow ("Subscribe to unlock" upsell composable)
- * - Lu40/b;  -> WidgetCTAScreen (home/explore "Become Subscriber" upsell banner)
+ * Verified on v3.24.1 and v3.27.0. Note the layer naming swapped between
+ * those versions ("UserModel" was the domain model in 3.24.1 but is a
+ * different layer in 3.27.0, whose domain model is "UserDataModel") - another
+ * reason not to match by class name.
  */
 
 /**
- * UserModel constructor. Matched by the parameter names used in the
- * Intrinsics.checkNotNullParameter calls at the start of the constructor.
+ * toString() of every user model layer carrying the subscription flags.
  */
-object UserModelConstructorFingerprint : Fingerprint(
-    definingClass = "Le40/u;",
-    name = "<init>",
-    strings = listOf(
-        "id",
-        "email",
-        "token",
-        "firstName",
-        "lastName",
-        "fullName",
-        "joinedAt",
-        "dailyDurationType",
-        "uuid",
-        "momentsSettings",
-        "quoteSettings",
-        "shareCode",
-        "stats",
-        "subscription"
-    )
+object SubscribedUserModelToStringFingerprint : Fingerprint(
+    name = "toString",
+    returnType = "Ljava/lang/String;",
+    strings = listOf(", isSubscribed=", ", isTrialSubscription=")
 )
 
 /**
- * CourseModel constructor. Matched by the parameter names used in the
- * Intrinsics.checkNotNullParameter calls at the start of the constructor.
+ * toString() of every course model layer carrying the availability flag.
+ * The packTitle label excludes unrelated models that also have an
+ * isAvailable flag (packs, agenda items, widgets).
  */
-object CourseModelConstructorFingerprint : Fingerprint(
-    definingClass = "Lo20/b;",
-    name = "<init>",
-    strings = listOf(
-        "title",
-        "type",
-        "id",
-        "description",
-        "courseSubtitle",
-        "createdAt",
-        "authors",
-        "packAuthors",
-        "dailyDetails"
-    )
+object AvailableCourseModelToStringFingerprint : Fingerprint(
+    name = "toString",
+    returnType = "Ljava/lang/String;",
+    strings = listOf(", isAvailable=", ", packTitle=")
 )
 
 /**
