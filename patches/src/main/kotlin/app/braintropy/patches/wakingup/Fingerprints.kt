@@ -38,20 +38,12 @@ object AvailableCourseModelToStringFingerprint : Fingerprint(
 )
 
 /**
- * The "Subscribe to unlock" upsell row composable.
- * Only one method named "a" exists in this class.
+ * The "Subscribe to unlock" upsell row and home CTA banner needed no
+ * suppression beyond the subscription override: with isSubscribed=true on
+ * every model layer, the app hides them itself (confirmed on v3.27.0).
+ * The previously used composable fingerprints were pinned to v3.24.1, which
+ * the server has since retired.
  */
-object SubscribeRowFingerprint : Fingerprint(
-    definingClass = "Lya0/h;",
-    name = "a",
-    returnType = "V",
-    parameters = listOf(
-        "I",
-        "Landroidx/compose/runtime/Composer;",
-        "Landroidx/compose/ui/Modifier;",
-        "Lkotlin/jvm/functions/Function0;"
-    )
-)
 
 /**
  * RemoteSettingsModel.toString(). The model carries the server-driven version
@@ -83,24 +75,5 @@ object ApiHeadersInterceptorFingerprint : Fingerprint(
         "Authorization",
         "app-version",
         "app-build"
-    )
-)
-
-/**
- * The home/explore CTA widget entry composable (WidgetCTAScreen), which renders
- * the "Join Waking Up" / "Get started" BecomeSubscriber banner.
- * The banner's visibility is driven by the remote home_cta configuration and is
- * not tied to the local subscription state, so it must be suppressed explicitly.
- * Only one method named "b" exists in this class.
- */
-object HomeCtaBannerFingerprint : Fingerprint(
-    definingClass = "Lu40/b;",
-    name = "b",
-    returnType = "V",
-    parameters = listOf(
-        "Lt40/k;",
-        "La50/o;",
-        "Landroidx/compose/runtime/Composer;",
-        "I"
     )
 )

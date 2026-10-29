@@ -122,14 +122,5 @@ val unlockPremiumPatch = bytecodePatch(
                 .first { instructions[it].isBooleanAssignment() }
             listOf(available to true)
         }
-
-        // Never render the "Subscribe to unlock" / "See Membership Options"
-        // upsell row or the home/explore "Join Waking Up" CTA banner. These
-        // fingerprints are version-pinned (R8 moved the composables into
-        // merged classes in later versions); skip silently when absent.
-        SubscribeRowFingerprint.matchOrNull()?.method?.addInstructions(0, "return-void")
-            ?: logger.warning("SubscribeRow composable not found; upsell row not suppressed.")
-        HomeCtaBannerFingerprint.matchOrNull()?.method?.addInstructions(0, "return-void")
-            ?: logger.warning("Home CTA banner composable not found; banner not suppressed.")
     }
 }
