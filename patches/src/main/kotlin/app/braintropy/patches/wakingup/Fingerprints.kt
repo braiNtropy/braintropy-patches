@@ -78,6 +78,23 @@ object SubscribeRowFingerprint : Fingerprint(
 )
 
 /**
+ * RemoteSettingsModel.toString(). The model carries the server-driven version
+ * gate (preferredBuildNumber / criticalBuildNumber / preferredOSVersion) that
+ * decides whether the "Update Required" dialog is shown. Matched by the field
+ * names baked into the toString() string literals, so it survives R8
+ * re-obfuscation as long as the model keeps its shape.
+ */
+object RemoteSettingsModelToStringFingerprint : Fingerprint(
+    name = "toString",
+    returnType = "Ljava/lang/String;",
+    strings = listOf(
+        "RemoteSettingsModel(preferredBuildNumber=",
+        ", criticalBuildNumber=",
+        ", preferredOSVersion="
+    )
+)
+
+/**
  * The home/explore CTA widget entry composable (WidgetCTAScreen), which renders
  * the "Join Waking Up" / "Get started" BecomeSubscriber banner.
  * The banner's visibility is driven by the remote home_cta configuration and is
