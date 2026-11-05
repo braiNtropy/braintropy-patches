@@ -63,6 +63,7 @@ val unlockPremiumPatch = bytecodePatch(
         webClientClass.methods.add(interceptor)
 
         interceptor.addInstructions(
+            0,
             """
                 invoke-interface { p2 }, Landroid/webkit/WebResourceRequest;->getUrl()Landroid/net/Uri;
                 move-result-object v0
