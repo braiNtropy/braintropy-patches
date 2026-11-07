@@ -9,7 +9,7 @@ This repository contains patches maintained by [braiNtropy](https://github.com/b
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v2.7.0-dev.1](https://github.com/braiNtropy/braintropy-patches/releases/tag/v2.7.0-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;6 patches total
+> **[v2.7.0-dev.2](https://github.com/braiNtropy/braintropy-patches/releases/tag/v2.7.0-dev.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;6 patches total
 <details open>
 <summary>📦 Waking Up&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
 <br>
@@ -18,8 +18,8 @@ This repository contains patches maintained by [braiNtropy](https://github.com/b
 
 **🎯 Supported versions:**
 
-| 3.24.1 | 3.27.0 |
-| :---: | :---: |
+| 3.24.1 | 3.27.0 | 3.27.1 |
+| :---: | :---: | :---: |
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|

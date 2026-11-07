@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "2.7.0-dev.1",
+  "version": "2.7.0-dev.2",
   "patches": [
     {
       "name": "Disable Expo OTA updates",
@@ -42,6 +42,13 @@
             },
             {
               "version": "3.27.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": "3.27.1",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -137,6 +144,13 @@
             },
             {
               "version": "3.27.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": "3.27.1",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,

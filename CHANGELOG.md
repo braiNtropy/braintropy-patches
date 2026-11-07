@@ -1,3 +1,9 @@
+## [2.7.0-dev.2](https://github.com/braiNtropy/braintropy-patches/compare/v2.7.0-dev.1...v2.7.0-dev.2) (2026-11-07)
+
+### ✨ New Features
+
+* **Waking Up:** mark v3.27.1 as supported ([9d024d8](https://github.com/braiNtropy/braintropy-patches/commit/9d024d85a28b58fe23e0f9fc4edc820ae2308124))
+
 ## [2.7.0-dev.1](https://github.com/braiNtropy/braintropy-patches/compare/v2.6.0...v2.7.0-dev.1) (2026-11-07)
 
 ### ✨ New Features
