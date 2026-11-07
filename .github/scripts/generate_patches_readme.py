@@ -138,7 +138,7 @@ def build_content():
         patches  = sorted(entry["patches"].values(), key=lambda x: x["name"])
         tested   = latest_version(entry["targets"], entry["package"], want_tested=True)
         reported = latest_version(entry["targets"], entry["package"], want_tested=False)
-        app_cell = f"{entry['emoji']} {entry['name']}<br>`{entry['package']}`"
+        app_cell = f"{entry['emoji']} {entry['name']}"
         for i, p in enumerate(patches):
             desc = (p.get("description") or "").replace("\n", "<br>")
             opts = f" | {options_cell(p)}" if any_options else ""
