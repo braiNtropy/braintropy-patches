@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-11-07T11:50:38",
-  "description": "## [2.7.0-dev.2](https://github.com/braiNtropy/braintropy-patches/compare/v2.7.0-dev.1...v2.7.0-dev.2) (2026-11-07)\n\n### ✨ New Features\n\n* **Waking Up:** mark v3.27.1 as supported ([9d024d8](https://github.com/braiNtropy/braintropy-patches/commit/9d024d85a28b58fe23e0f9fc4edc820ae2308124))",
-  "download_url": "https://github.com/braiNtropy/braintropy-patches/releases/download/v2.7.0-dev.2/patches-2.7.0-dev.2.mpp",
+  "created_at": "2026-11-07T13:14:49",
+  "description": "## [2.7.0-dev.3](https://github.com/braiNtropy/braintropy-patches/compare/v2.7.0-dev.2...v2.7.0-dev.3) (2026-11-07)\n\n### ✨ New Features\n\n* Shorten patch descriptions for readability ([582005a](https://github.com/braiNtropy/braintropy-patches/commit/582005a23fa79cdc832087e81056b8e7186fc980))",
+  "download_url": "https://github.com/braiNtropy/braintropy-patches/releases/download/v2.7.0-dev.3/patches-2.7.0-dev.3.mpp",
   "signature_download_url": "",
-  "version": "2.7.0-dev.2"
+  "version": "2.7.0-dev.3"
 }

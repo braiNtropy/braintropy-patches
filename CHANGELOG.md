@@ -1,3 +1,9 @@
+## [2.7.0-dev.3](https://github.com/braiNtropy/braintropy-patches/compare/v2.7.0-dev.2...v2.7.0-dev.3) (2026-11-07)
+
+### ✨ New Features
+
+* Shorten patch descriptions for readability ([582005a](https://github.com/braiNtropy/braintropy-patches/commit/582005a23fa79cdc832087e81056b8e7186fc980))
+
 ## [2.7.0-dev.2](https://github.com/braiNtropy/braintropy-patches/compare/v2.7.0-dev.1...v2.7.0-dev.2) (2026-11-07)
 
 ### ✨ New Features

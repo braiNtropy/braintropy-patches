@@ -1,10 +1,10 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "2.7.0-dev.2",
+  "version": "2.7.0-dev.3",
   "patches": [
     {
       "name": "Disable Expo OTA updates",
-      "description": "Disables expo-updates: the app no longer contacts the Expo update server (u.expo.dev) on launch and can never download or run over-the-air JavaScript updates published by the developer. Only applies to apps built with Expo.",
+      "description": "Blocks over-the-air JavaScript updates in Expo apps.",
       "default": false,
       "category": "Updates",
       "compatiblePackages": null,
@@ -12,7 +12,7 @@
     },
     {
       "name": "Disable Pairip license check",
-      "description": "Disables the Google Play license check (Pairip) that redirects installs not purchased through the Play Store to the buy page. The check never runs, so this also works on degoogled devices without Play services. Does not bypass Play Integrity attestation.",
+      "description": "Disables Google's Play Store license check. Works on degoogled devices; does not bypass Play Integrity.",
       "default": false,
       "category": "License",
       "compatiblePackages": null,
@@ -20,7 +20,7 @@
     },
     {
       "name": "Disable update prompt",
-      "description": "Suppresses the \"Update Required\" dialog shown on launch when the server reports a newer preferred build, and spoofs the app-version/app-build request headers so the server (which rejects outdated builds with a 404) keeps serving the app. Does not affect the version shown in the app.",
+      "description": "Stops the forced \"Update Required\" dialog so older versions keep working.",
       "default": true,
       "category": "Updates",
       "compatiblePackages": [
@@ -61,7 +61,7 @@
     },
     {
       "name": "Unlock Premium",
-      "description": "Unlocks Hume Plus by feeding fake Play Billing purchases to the purchase stream the app's Dart subscription repository listens to.",
+      "description": "Unlocks Hume Plus.",
       "default": true,
       "category": "Unlock",
       "compatiblePackages": [
@@ -88,7 +88,7 @@
     },
     {
       "name": "Unlock Premium",
-      "description": "Enables app features locked behind the subscription paywall.",
+      "description": "Unlocks all subscription features.",
       "default": true,
       "category": "Unlock",
       "compatiblePackages": [
