@@ -1,13 +1,12 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "2.6.0",
+  "version": "2.7.0-dev.1",
   "patches": [
     {
       "name": "Disable Expo OTA updates",
       "description": "Disables expo-updates: the app no longer contacts the Expo update server (u.expo.dev) on launch and can never download or run over-the-air JavaScript updates published by the developer. Only applies to apps built with Expo.",
       "default": false,
       "category": "Updates",
-      "dependencies": [],
       "compatiblePackages": null,
       "options": []
     },
@@ -16,7 +15,6 @@
       "description": "Disables the Google Play license check (Pairip) that redirects installs not purchased through the Play Store to the buy page. The check never runs, so this also works on degoogled devices without Play services. Does not bypass Play Integrity attestation.",
       "default": false,
       "category": "License",
-      "dependencies": [],
       "compatiblePackages": null,
       "options": []
     },
@@ -25,7 +23,6 @@
       "description": "Suppresses the \"Update Required\" dialog shown on launch when the server reports a newer preferred build, and spoofs the app-version/app-build request headers so the server (which rejects outdated builds with a 404) keeps serving the app. Does not affect the version shown in the app.",
       "default": true,
       "category": "Updates",
-      "dependencies": [],
       "compatiblePackages": [
         {
           "packageName": "org.wakingup.android",
@@ -34,6 +31,7 @@
           "apkFileType": "APK",
           "appIconColor": "#1C1B33",
           "signatures": null,
+          "formFactor": "MOBILE",
           "targets": [
             {
               "version": "3.24.1",
@@ -59,7 +57,6 @@
       "description": "Unlocks Hume Plus by feeding fake Play Billing purchases to the purchase stream the app's Dart subscription repository listens to.",
       "default": true,
       "category": "Unlock",
-      "dependencies": [],
       "compatiblePackages": [
         {
           "packageName": "com.elink.fittrackhealth.pro",
@@ -68,6 +65,7 @@
           "apkFileType": "XAPK",
           "appIconColor": "#2EC4B6",
           "signatures": null,
+          "formFactor": "MOBILE",
           "targets": [
             {
               "version": "9.29.2",
@@ -86,9 +84,6 @@
       "description": "Enables app features locked behind the subscription paywall.",
       "default": true,
       "category": "Unlock",
-      "dependencies": [
-        "BytecodePatch"
-      ],
       "compatiblePackages": [
         {
           "packageName": "com.rp.hypertrophy",
@@ -97,9 +92,17 @@
           "apkFileType": "XAPK",
           "appIconColor": "#EC0915",
           "signatures": null,
+          "formFactor": "MOBILE",
           "targets": [
             {
               "version": "1.6.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": "1.9.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -115,7 +118,6 @@
       "description": "Unlocks all premium content and removes subscription banners.",
       "default": true,
       "category": "Unlock",
-      "dependencies": [],
       "compatiblePackages": [
         {
           "packageName": "org.wakingup.android",
@@ -124,6 +126,7 @@
           "apkFileType": "APK",
           "appIconColor": "#1C1B33",
           "signatures": null,
+          "formFactor": "MOBILE",
           "targets": [
             {
               "version": "3.24.1",

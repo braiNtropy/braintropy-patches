@@ -9,10 +9,12 @@ This repository contains patches maintained by [braiNtropy](https://github.com/b
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v2.6.0](https://github.com/braiNtropy/braintropy-patches/releases/tag/v2.6.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;6 patches total
+> **[v2.7.0-dev.1](https://github.com/braiNtropy/braintropy-patches/releases/tag/v2.7.0-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;6 patches total
 <details open>
 <summary>📦 Waking Up&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
 <br>
+
+**Package name:** `org.wakingup.android`
 
 **🎯 Supported versions:**
 
@@ -30,6 +32,8 @@ This repository contains patches maintained by [braiNtropy](https://github.com/b
 <summary>📦 Hume&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
 <br>
 
+**Package name:** `com.elink.fittrackhealth.pro`
+
 **🎯 Supported versions:**
 
 | 9.29.2 |
@@ -45,10 +49,12 @@ This repository contains patches maintained by [braiNtropy](https://github.com/b
 <summary>📦 RP Hypertrophy&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
 <br>
 
+**Package name:** `com.rp.hypertrophy`
+
 **🎯 Supported versions:**
 
-| 1.6.0 |
-| :---: |
+| 1.6.0 | 1.9.0 |
+| :---: | :---: |
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
