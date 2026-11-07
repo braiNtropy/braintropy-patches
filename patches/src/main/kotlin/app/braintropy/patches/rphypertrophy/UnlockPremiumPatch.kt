@@ -34,7 +34,7 @@ private const val RESPONSE =
 @Suppress("unused")
 val unlockPremiumPatch = bytecodePatch(
     name = "Unlock Premium",
-    description = "Enables app features locked behind the subscription paywall.",
+    description = "Unlocks all subscription features.",
     default = true
 ) {
     category("Unlock")
