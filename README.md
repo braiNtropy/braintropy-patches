@@ -8,71 +8,22 @@ This repository contains patches maintained by [braiNtropy](https://github.com/b
 
 ## 🩹 Patches list
 
-<!-- PATCHES_START EXPANDED -->
+<!-- PATCHES_START -->
 > **[v2.7.0-dev.2](https://github.com/braiNtropy/braintropy-patches/releases/tag/v2.7.0-dev.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;6 patches total
-<details open>
-<summary>📦 Waking Up&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
-<br>
 
-**Package name:** `org.wakingup.android`
+| App | 💊&nbsp;Patch | Function | ✅&nbsp;Tested | 👤&nbsp;User-reported |
+|-----|--------|----------|---------|----------------|
+| 📦 Waking Up<br>`org.wakingup.android` | Disable update prompt | Suppresses the "Update Required" dialog shown on launch when the server reports a newer preferred build, and spoofs the app-version/app-build request headers so the server (which rejects outdated builds with a 404) keeps serving the app. Does not affect the version shown in the app. | 3.27.0 | 3.27.1 |
+|  | Unlock Premium | Unlocks all premium content and removes subscription banners. | 3.27.0 | 3.27.1 |
+| 📦 Hume<br>`com.elink.fittrackhealth.pro` | Unlock Premium | Unlocks Hume Plus by feeding fake Play Billing purchases to the purchase stream the app's Dart subscription repository listens to. | 9.29.2 | — |
+| 📦 RP Hypertrophy<br>`com.rp.hypertrophy` | Unlock Premium | Enables app features locked behind the subscription paywall. | 1.9.0 | — |
 
-**🎯 Supported versions:**
+**🌐 Universal patches**
 
-| 3.24.1 | 3.27.0 | 3.27.1 |
-| :---: | :---: | :---: |
-
-| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
-|----------|----------------|-----------|
-| [Disable update prompt](#disable-update-prompt) | Suppresses the "Update Required" dialog shown on launch when the server reports a newer preferred build, and spoofs the app-version/app-build request headers so the server (which rejects outdated builds with a 404) keeps serving the app. Does not affect the version shown in the app. |  |
-| [Unlock Premium](#unlock-premium) | Unlocks all premium content and removes subscription banners. |  |
-
-</details>
-
-<details open>
-<summary>📦 Hume&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
-<br>
-
-**Package name:** `com.elink.fittrackhealth.pro`
-
-**🎯 Supported versions:**
-
-| 9.29.2 |
-| :---: |
-
-| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
-|----------|----------------|-----------|
-| [Unlock Premium](#unlock-premium) | Unlocks Hume Plus by feeding fake Play Billing purchases to the purchase stream the app's Dart subscription repository listens to. |  |
-
-</details>
-
-<details open>
-<summary>📦 RP Hypertrophy&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
-<br>
-
-**Package name:** `com.rp.hypertrophy`
-
-**🎯 Supported versions:**
-
-| 1.6.0 | 1.9.0 |
-| :---: | :---: |
-
-| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
-|----------|----------------|-----------|
-| [Unlock Premium](#unlock-premium) | Enables app features locked behind the subscription paywall. |  |
-
-</details>
-
-<details open>
-<summary>🌐 Universal&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
-<br>
-
-| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
-|----------|----------------|-----------|
-| [Disable Expo OTA updates](#disable-expo-ota-updates) | Disables expo-updates: the app no longer contacts the Expo update server (u.expo.dev) on launch and can never download or run over-the-air JavaScript updates published by the developer. Only applies to apps built with Expo. |  |
-| [Disable Pairip license check](#disable-pairip-license-check) | Disables the Google Play license check (Pairip) that redirects installs not purchased through the Play Store to the buy page. The check never runs, so this also works on degoogled devices without Play services. Does not bypass Play Integrity attestation. |  |
-
-</details>
-
+| 💊&nbsp;Patch | Function |
+|--------|----------|
+| Disable Expo OTA updates | Disables expo-updates: the app no longer contacts the Expo update server (u.expo.dev) on launch and can never download or run over-the-air JavaScript updates published by the developer. Only applies to apps built with Expo. |
+| Disable Pairip license check | Disables the Google Play license check (Pairip) that redirects installs not purchased through the Play Store to the buy page. The check never runs, so this also works on degoogled devices without Play services. Does not bypass Play Integrity attestation. |
 <!-- PATCHES_END -->
 
 #### How to use these patches
