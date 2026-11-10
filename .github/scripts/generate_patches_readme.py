@@ -52,8 +52,8 @@ FORM_FACTORS = {
 
 
 def pkg_emoji(form_factor):
-    """Return the emoji for a form factor, or a standard package emoji."""
-    return FORM_FACTORS.get(form_factor, ("📦", None))[0]
+    """Return the emoji for a non-mobile form factor, or None for standard apps."""
+    return FORM_FACTORS.get(form_factor, (None, None))[0]
 
 
 def pkg_label(name, form_factor):
@@ -131,14 +131,14 @@ def build_content():
     opts_sep    = " |--------" if any_options else ""
 
     lines += [
-        f"| App | 💊&nbsp;Patch | Function{opts_header} | ✅&nbsp;Tested | 👤&nbsp;User-reported |",
+        f"| 📦&nbsp;App | 💊&nbsp;Patch | Function{opts_header} | ✅&nbsp;Tested | 👤&nbsp;User-reported |",
         f"|-----|--------|----------{opts_sep}|---------|----------------|",
     ]
     for entry in by_pkg.values():
         patches  = sorted(entry["patches"].values(), key=lambda x: x["name"])
         tested   = latest_version(entry["targets"], entry["package"], want_tested=True)
         reported = latest_version(entry["targets"], entry["package"], want_tested=False)
-        app_cell = f"{entry['emoji']} {entry['name']}"
+        app_cell = f"{entry['emoji']} {entry['name']}" if entry['emoji'] else entry['name']
         for i, p in enumerate(patches):
             desc = (p.get("description") or "").replace("\n", "<br>")
             opts = f" | {options_cell(p)}" if any_options else ""
