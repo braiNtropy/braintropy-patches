@@ -135,7 +135,8 @@ def build_content():
         f"|-----|--------|----------{opts_sep}|---------|----------------|",
     ]
     for entry in by_pkg.values():
-        patches  = sorted(entry["patches"].values(), key=lambda x: x["name"])
+        # Unlock Premium first, the rest alphabetical
+        patches  = sorted(entry["patches"].values(), key=lambda x: (x["name"] != "Unlock Premium", x["name"]))
         tested   = latest_version(entry["targets"], entry["package"], want_tested=True)
         reported = latest_version(entry["targets"], entry["package"], want_tested=False)
         app_cell = f"{entry['emoji']} {entry['name']}" if entry['emoji'] else entry['name']
