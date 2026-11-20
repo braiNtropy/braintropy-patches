@@ -234,7 +234,7 @@ def build_content():
     opts_sep    = " |--------" if any_options else ""
 
     lines += [
-        f"| 📦&nbsp;App | 💊&nbsp;Patch | Function{opts_header} | ✅&nbsp;Tested | 👤&nbsp;User-reported |",
+        f"| 📦&nbsp;App | 💊&nbsp;Patch | ⚡&nbsp;Function{opts_header} | ✅&nbsp;Tested | 👤&nbsp;User-reported |",
         f"|-----|--------|----------{opts_sep}|---------|----------------|",
     ]
     for entry in by_pkg.values():
@@ -260,7 +260,7 @@ def build_content():
             "",
             f"**{universal_icon or '🌐'} Universal patches**",
             "",
-            f"| 💊&nbsp;Patch | Function{opts_header} |",
+            f"| 💊&nbsp;Patch | ⚡&nbsp;Function{opts_header} |",
             f"|--------|----------{opts_sep}|",
         ]
         for p in sorted(universal.values(), key=lambda x: x["name"]):
