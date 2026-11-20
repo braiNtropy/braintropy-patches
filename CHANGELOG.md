@@ -1,3 +1,9 @@
+## [2.8.0-dev.1](https://github.com/braiNtropy/braintropy-patches/compare/v2.7.0...v2.8.0-dev.1) (2026-11-20)
+
+### ✨ New Features
+
+* Add function icon to patches table ([40c3aaa](https://github.com/braiNtropy/braintropy-patches/commit/40c3aaa2a12b1613167a86214bc27ca78801e0d1))
+
 ## [2.7.0](https://github.com/braiNtropy/braintropy-patches/compare/v2.6.0...v2.7.0) (2026-11-07)
 
 ### ✨ New Features

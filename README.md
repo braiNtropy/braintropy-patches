@@ -9,9 +9,9 @@ This repository contains patches maintained by [braiNtropy](https://github.com/b
 ## 🩹 Patches list
 
 <!-- PATCHES_START -->
-> **[v2.7.0](https://github.com/braiNtropy/braintropy-patches/releases/tag/v2.7.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;6 patches total
+> **[v2.8.0-dev.1](https://github.com/braiNtropy/braintropy-patches/releases/tag/v2.8.0-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;6 patches total
 
-| 📦&nbsp;App | 💊&nbsp;Patch | Function | ✅&nbsp;Tested | 👤&nbsp;User-reported |
+| 📦&nbsp;App | 💊&nbsp;Patch | ⚡&nbsp;Function | ✅&nbsp;Tested | 👤&nbsp;User-reported |
 |-----|--------|----------|---------|----------------|
 | Waking Up | Unlock Premium | Unlocks all premium content and removes subscription banners. | 3.27.0 | 3.27.1 |
 |  | Disable update prompt | Stops the forced "Update Required" dialog so older versions keep working. | 3.27.0 | 3.27.1 |
@@ -20,7 +20,7 @@ This repository contains patches maintained by [braiNtropy](https://github.com/b
 
 **🌐 Universal patches**
 
-| 💊&nbsp;Patch | Function |
+| 💊&nbsp;Patch | ⚡&nbsp;Function |
 |--------|----------|
 | Disable Expo OTA updates | Blocks over-the-air JavaScript updates in Expo apps. |
 | Disable Pairip license check | Disables Google's Play Store license check. Works on degoogled devices; does not bypass Play Integrity. |
