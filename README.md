@@ -9,14 +9,14 @@ This repository contains patches maintained by [braiNtropy](https://github.com/b
 ## 🩹 Patches list
 
 <!-- PATCHES_START -->
-> **[v2.8.0-dev.1](https://github.com/braiNtropy/braintropy-patches/releases/tag/v2.8.0-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;6 patches total
+> **[v2.8.0-dev.2](https://github.com/braiNtropy/braintropy-patches/releases/tag/v2.8.0-dev.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;6 patches total
 
 | 📦&nbsp;App | 💊&nbsp;Patch | ⚡&nbsp;Function | ✅&nbsp;Tested | 👤&nbsp;User-reported |
 |-----|--------|----------|---------|----------------|
 | Waking Up | Unlock Premium | Unlocks all premium content and removes subscription banners. | 3.27.0 | 3.27.1 |
 |  | Disable update prompt | Stops the forced "Update Required" dialog so older versions keep working. | 3.27.0 | 3.27.1 |
 | Hume | Unlock Premium | Unlocks Hume Plus. | 9.29.2 | — |
-| RP Hypertrophy | Unlock Premium | Unlocks all subscription features. | 1.9.0 | — |
+| RP Hypertrophy | Unlock Premium | Unlocks all subscription features. | 1.11.0 | — |
 
 **🌐 Universal patches**
 
