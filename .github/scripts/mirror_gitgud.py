@@ -57,13 +57,6 @@ def sha256(data):
     return "sha256:" + hashlib.sha256(data).hexdigest()
 
 
-def direct_asset_url(tag, filename):
-    return (
-        f"https://gitgud.io/{GITGUD_PROJECT}/-/releases/"
-        f"{urllib.parse.quote(tag, safe='')}/downloads/{urllib.parse.quote(filename, safe='')}"
-    )
-
-
 def package_file_url(tag, filename):
     version = tag.removeprefix("v")
     return (
@@ -75,7 +68,7 @@ def package_file_url(tag, filename):
 def gitgud_manifest(manifest, tag, mpp_filename, asset_names):
     """Return release metadata that downloads exclusively from GitGud."""
     result = dict(manifest)
-    result["download_url"] = direct_asset_url(tag, mpp_filename)
+    result["download_url"] = package_file_url(tag, mpp_filename)
     signature_url = result.get("signature_download_url")
     if signature_url:
         signature_filename = urllib.parse.unquote(
@@ -83,7 +76,7 @@ def gitgud_manifest(manifest, tag, mpp_filename, asset_names):
         )
         if signature_filename not in asset_names:
             raise RuntimeError(f"Signature asset {signature_filename!r} is missing from {tag}")
-        result["signature_download_url"] = direct_asset_url(tag, signature_filename)
+        result["signature_download_url"] = package_file_url(tag, signature_filename)
     return result
 
 
@@ -181,7 +174,7 @@ def sync_release(mirror, release):
 
     # Prove that Morphe users can retrieve every asset without GitHub or credentials.
     for filename, data in files.items():
-        public = download(direct_asset_url(tag, filename))
+        public = download(package_file_url(tag, filename))
         if sha256(public) != sha256(data):
             raise RuntimeError(f"Public GitGud verification failed: {tag}/{filename}")
 

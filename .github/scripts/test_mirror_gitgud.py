@@ -26,11 +26,11 @@ class ManifestTest(unittest.TestCase):
         self.assertEqual(manifest["version"], result["version"])
         self.assertEqual(
             result["download_url"],
-            "https://gitgud.io/group/mirror/-/releases/v2.8.0/downloads/patches-2.8.0.mpp",
+            "https://gitgud.io/api/v4/projects/group%2Fmirror/packages/generic/morphe-patches/2.8.0/patches-2.8.0.mpp",
         )
         self.assertEqual(
             result["signature_download_url"],
-            "https://gitgud.io/group/mirror/-/releases/v2.8.0/downloads/patches-2.8.0.mpp.asc",
+            "https://gitgud.io/api/v4/projects/group%2Fmirror/packages/generic/morphe-patches/2.8.0/patches-2.8.0.mpp.asc",
         )
         self.assertNotEqual(manifest["download_url"], result["download_url"])
 
